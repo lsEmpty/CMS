@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Beauty Parlor</title>
+</head>
+
+<body>
+    <header>
+        <img src="Media/logo.png" alt="" class="principal_logo">
+        <img src="Media/principal_image.png" alt="" class="principal_image">
+        <div class="principal_title">
+            <h1>The best beauty parlor</h1>
+            <h2>Are you ready to come here?</h2>
+        </div>
+    </header>
+    <section class="about_us">
+        <h2>Who are we?</h2>
+        <div class="content_about_us">
+            <img src="Media/photo.png" alt="">
+            <p>Welcome to Blossom Beauty Studio a place where beauty meets relaxation!
+                <br><br>
+                At our beauty parlor, we specialize in enhancing your natural beauty with expert hair styling,
+                luxurious facials, flawless manicures, and rejuvenating skincare treatments. Our professional team
+                is dedicated to providing a personalized experience in a warm and elegant atmosphere. Whether you’re
+                looking for a fresh new look or a moment of self-care, we’re here to make you feel confident and
+                radiant.
+                <br><br>
+                Indulge in beauty, relax in luxury visit us today!
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1>Contact us</h1>
+            <form id="contact-form" method="POST" action="send_email.php">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">SEND</button>
+                <div id="status"></div>
+            </form>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+
+    <footer>
+        <h4>&copy; Blossom Beauty Studio - 2025</h4>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Nunito", serif;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .principal_logo {
+        width: 200px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .principal_image {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+    }
+
+    .principal_title {
+        margin-top: 310px;
+        margin-left: 40px;
+        position: relative;
+    }
+
+    .principal_title h1 {
+        color: #35CCBC;
+        font-size: 40px;
+    }
+
+    .principal_title h2 {
+        color: #147D6F;
+    }
+
+    .about_us {
+        background-color: white;
+        text-align: center;
+        margin: 60px 60px;
+    }
+
+    .about_us h2 {
+        padding: 60px 0px;
+        font-size: 40px;
+    }
+
+    .content_about_us {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content_about_us img {
+        width: 360px;
+        height: auto;
+        margin: 5px;
+    }
+
+    .content_about_us p {
+        margin: 20px 80px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    footer {
+        background-color: #30CFBA;
+        padding: 20px 0px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 18px;
+    }
+</style>
