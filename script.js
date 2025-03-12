@@ -23,10 +23,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             statusMessage.textContent = 'Hubo un error. Intenta nuevamente.';
             statusMessage.style.color = 'red';
         }
+        console.log(data)
     })
     .catch(error => {
         statusMessage.textContent = 'Error en el envío del mensaje.';
         statusMessage.style.color = 'red';
+        console.log(error);
     })
     .finally(() => {
         submitButton.disabled = false;
