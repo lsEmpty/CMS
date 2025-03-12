@@ -10,7 +10,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     submitButton.disabled = true;
     statusMessage.textContent = 'Enviando...';
     
-    fetch('../send_email.php', {
+    fetch('https://send-email-api-ezij.onrender.com', {
         method: 'POST',
         body: form
     })
